@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar WEB Static</title>
+    <meta name="description" content="">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FORMULIR -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9fE80YTZ6CU" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <form>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" placeholder="username" value="" name="username" id="username" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" value="" name="password" id="password">
+        </div>
+        <div>
+            <input type="radio" name="penyiar" id="penyiar1">
+            <label for="penyiar1" onclick="coba('hendar')">hendar</label>
+        </div>
+
+        <div>
+            <input type="radio" name="penyiar" id="penyiar2">
+            <label for="penyiar2" onclick="coba('azani')">azani</label>
+        </div>
+
+
+        <button type="button" onclick="coba()">LOGIN</button>
+        <button type="submit">Submit</button>
+        <script>
+            const coba = (penyiar) => {
+                alert("hello world " + penyiar)
+            }
+        </script>
+    </form>
+
+    <div style="margin-bottom: 100vh;"></div>
+    <!-- iframe -->
+    <iframe src="https://shiftacademy.id/" width="560" height="315" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hxSddfuYQ1k?autoplay=1&start=720"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <!-- MULTIMEDIA -->
+    <audio src="./assets/music/TromboneAccent SME01_91.2.wav" controls autoplay></audio>
+
+    <video src="./assets/video/videoplayback.mp4" controls autoplay></video>
+    <video controls autoplay>
+        <source src="./assets/video/vieoplayback.mp4">
+        <source src="./assets/video/videoplayback (1).mp4">
+    </video>
+
+    <a href="#" style="display: block;">KLIK A</a>
+    <a href="#">KLIK B</a><br>
+    <a href="#">KLIK C</a>
+    <h2 style="display: inline;">HEADING 2</h2>
+    <h3 style="display: inline; margin-top: 10px;margin-top: 20px;">HEADING 3</h3>
+
+    <!-- LIST -->
+    <ol type="a">
+        <li>Ghany</li>
+        <li>Bayu</li>
+        <li>Fateeh</li>
+        <li>azani</li>
+        <li>dst</li>
+    </ol>
+
+    <ul>
+        <li>Ghany</li>
+        <li>Bayu</li>
+        <li>Fateeh</li>
+        <li>azani</li>
+        <li>dst</li>
+    </ul>
+
+
+    <!-- TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shift Academy</td>
+                <td>082164028264</td>
+                <td>Indonesia</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shift Academy II</td>
+                <td>082164028266</td>
+                <td>Rusia</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>No</th>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- IMG -->
+    <img src="assets/img/tokopedia-wishlis.jpeg" alt="ini gambar tokopedia"
+        srcset="https://play-lh.googleusercontent.com/Xgdqn4Ckg5B3SCw91pCSQwKUQc74CWfUNVg6v9E1xzY069go89KxzDSNzrBMf-t-ZA">
+    <img src="https://statik.tempo.co/data/2019/08/08/id_862228/862228_720.jpg" alt="">
+
+    <!-- LINK -->
+    <a target="blank" href="pages/about.html"> ke halaman about</a>
+    <a href="https://shiftacademy.id/">Ini Shift Academy</a>
+
+    <h1>KONTEN 1</h1>
+    <hr>
+    <!-- Paragraf -->
+    <p>
+    <h4>Judul H5</h4>
+    &emsp;&ensp; Lorem ipsum &ensp;&ensp;&ensp;&ensp;&ensp;dolor sit amet consectetur, adipisicing elit. Accusamus,
+    reiciendis itaque autem sed
+    explicabo <br>
+    odio <br>
+    enim, nobis atque eligendi corporis culpa! Amet placeat quidem optio molestias culpa ipsa, magnam in.</p>
+
+    <!-- HEADING -->
+    <h1>Judul Utama</h1>
+    <h3>Judul ketiga</h3>
+    <h5>Judul kelima</h5>
+    <h6>Judul keenam</h6>
+    <h6>Judul keenam</h6>
+
+</body>
+
+</html>
